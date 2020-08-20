@@ -1,0 +1,83 @@
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 1140px;
+    }
+    .main-row {
+        display: block;
+    }
+    .ekit-app-sumo-content {
+        flex: unset;
+        padding: 4rem 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 720px;
+    }
+    .ekit-app-sumo-content {
+        width: 90%;
+    }
+}
+@media (max-width: 575.98px) {
+    .container {
+        max-width: 540px;
+        margin: 0;
+        padding: 0 1rem;
+    }
+    .ekit-app-sumo-content {
+        padding-bottom: 0;
+        margin: 0;
+    }
+    .ekit-app-sumo-content--images {
+        margin-bottom: 3rem;
+    }
+    .ekit-app-sumo-content--images img {
+        height: 2rem;
+    }
+    .ekit-app-sumo-content--images img:last-child {
+        height: 1.7rem;
+    }
+    .ekit-app-sumo-content--heading {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .ekit-app-sumo-content--heading > span {
+        font-size: 28px;
+    }
+    .ekit-app-sumo-content--list li {
+        font-size: 1em;
+    }
+    #ekit-app-sumo {
+        display: block;
+    }
+    .campaign-form {
+        width: 100%;
+        margin: 0;
+    }
+    .campaign-form .messages,
+    .campaign-form form {
+        padding: 1rem;
+    }
+}
+@media (max-width: 400px) {
+    .ekit-app-sumo-content--images img {
+        height: 1.9rem;
+    }
+    .ekit-app-sumo-content--images img:last-child {
+        height: 1.3rem;
+    }
+    .ekit-app-sumo-content--heading {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .ekit-app-sumo-content--heading > span {
+        font-size: 24px;
+    }
+}

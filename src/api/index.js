@@ -1,5 +1,5 @@
 import axios from 'axios'
-console.log(window.edd_campaign_config);
+//console.log(window.edd_campaign_config);
 
 let { nonce, validate_api, submit_api } = window.edd_campaign_config
 
@@ -27,7 +27,7 @@ const validate = async data => {
         //return res.data
     }
     catch (error) {
-        console.log(error.message);
+        //console.log(error.message);
         return {
             success: false,
             message: [
@@ -40,7 +40,7 @@ const validate = async data => {
 
 const submit = async data => {
     try {
-        console.log({ nonce, ...data });
+        //console.log({ nonce, ...data });
         //throw new Error('err')
 
         await sleep(750)
