@@ -1,0 +1,163 @@
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f8fb;
+}
+
+.main-bg {
+    background-image: url(../images/background.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    width: 1.3em;
+    height: 1.25em;
+    color: #363839;
+    border: 1px solid #bdc1c6;
+    border-radius: 3px;
+    appearance: none;
+    outline: 0;
+    cursor: pointer;
+    &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        top: 0px;
+        left: 4px;
+        width: 5px;
+        height: 10px;
+        border-style: solid;
+        border-color: white;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        opacity: 0;
+    }
+    &:checked {
+        color: white;
+        border-color: #673ab7;
+        background: #673ab7;
+        &::before {
+            opacity: 1;
+        }
+        & + label a {
+            color: #673ab7;
+            font-weight: 500;
+        }
+    }
+}
+
+input[type="checkbox"] + label {
+    &,
+    a {
+        color: #606f7b;
+    }
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    background-color: #111111;
+    height: 46px;
+    padding: 0 2rem;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.65;
+    user-select: none;
+    cursor: not-allowed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.mh-100vh {
+    min-height: 100vh;
+}
+
+.ekit-app-sumo-content {
+    flex: 1;
+    &--images {
+        margin-bottom: 4rem;
+        .love-face {
+            margin: 0 24px;
+        }
+    }
+    &--heading {
+        font-family: "Archivo";
+        font-size: 56px;
+        color: #111111;
+        margin-bottom: 2rem;
+        line-height: 64px;
+        & > span {
+            display: block;
+            font-size: 45px;
+        }
+        .underline {
+            position: relative;
+            &::after {
+                content: "";
+                height: 8px;
+                width: 100%;
+                position: absolute;
+                background-color: #f9ce21;
+                left: 0;
+                bottom: 7px;
+                z-index: -1;
+            }
+        }
+    }
+    &--list li {
+        font-family: "SF UI Display Regular";
+        color: #444444;
+        font-size: 18px;
+        margin-bottom: 12px;
+        img {
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+.ekit-app-sumo-wrapper {
+    flex: 1;
+}
+
+#ekit-app-sumo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+@import "./responsive";

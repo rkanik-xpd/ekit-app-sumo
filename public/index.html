@@ -1,17 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
+</head>
+
+<body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+        <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+            Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
+    <div class="main-bg">
+        <div class="container">
+            <div class="main-row d-flex align-center mh-100vh">
+                <div class="ekit-app-sumo-content">
+                    <div class="d-flex ekit-app-sumo-content--images">
+                        <img src="<%= BASE_URL %>svg/ekit.svg" alt="">
+                        <img class="love-face" src="<%= BASE_URL %>svg/love-face.svg" alt="">
+                        <img src="<%= BASE_URL %>svg/app-sumo.svg" alt="">
+                    </div>
+                    <h1 class="ekit-app-sumo-content--heading">
+                        Claim your AppSumo
+                        <span>
+                            <span class="underline">ElementsKit</span>
+                            purchase
+                        </span>
+                    </h1>
+                    <ul class="ekit-app-sumo-content--list">
+                        <li>
+                            <img src="<%= BASE_URL %>svg/check.svg" alt="">
+                            Header & Footer Builder
+                        </li>
+                        <li>
+                            <img src="<%= BASE_URL %>svg/check.svg" alt="">
+                            Widget Builder
+                        </li>
+                        <li>
+                            <img src="<%= BASE_URL %>svg/check.svg" alt="">
+                            Mega Menu Builder
+                        </li>
+                        <li>
+                            <img src="<%= BASE_URL %>svg/check.svg" alt="">
+                            Advanced Parallax & Sticky Sections
+                        </li>
+                        <li>
+                            <img src="<%= BASE_URL %>svg/check.svg" alt="">
+                            60+ Widgets
+                        </li>
+                        <li>
+                            <img src="<%= BASE_URL %>svg/check.svg" alt="">
+                            300+ Ready Sections
+                        </li>
+                        <li>
+                            <img src="<%= BASE_URL %>svg/check.svg" alt="">
+                            30+ Complete Templates
+                        </li>
+                    </ul>
+                </div>
+                <div class="ekit-app-sumo-wrapper">
+                    <div id="ekit-app-sumo"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- built files will be auto injected -->
-  </body>
+
+    <script>
+        const BASE_URL = 'https://www.someurl.com'
+        window.edd_campaign_config = {
+            nonce: "fagctua",
+            validate_api: BASE_URL + "/edd-campaign/v1/validate",
+            submit_api: BASE_URL + "/edd-campaign/v1/submit"
+        }
+    </script>
+</body>
+
 </html>

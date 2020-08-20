@@ -1,0 +1,94 @@
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 1140px;
+    }
+    .main-row {
+        display: block;
+    }
+    .ekit-app-sumo-content {
+        flex: unset;
+        padding: 4rem 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 720px;
+    }
+    .ekit-app-sumo-content {
+        width: 90%;
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .container {
+        max-width: 540px;
+        margin: 0;
+        padding: 0 1rem;
+    }
+    .ekit-app-sumo-content {
+        padding-bottom: 0;
+        margin: 0;
+        &--images {
+            margin-bottom: 3rem;
+            img {
+                height: 2rem;
+            }
+        }
+        &--images img:last-child {
+            height: 1.7rem;
+        }
+        &--heading {
+            font-size: 36px;
+            line-height: 44px;
+            & > span {
+                font-size: 28px;
+            }
+        }
+        &--list li {
+            font-size: 1em;
+        }
+    }
+    #ekit-app-sumo {
+        display: block;
+    }
+    .campaign-form {
+        width: 100%;
+        margin: 0;
+        .messages,
+        form {
+            padding: 1rem;
+        }
+    }
+}
+@media (max-width: 400px) {
+    .ekit-app-sumo-content {
+        &--images {
+            img {
+                height: 1.9rem;
+            }
+        }
+        &--images img:last-child {
+            height: 1.3rem;
+        }
+        &--heading {
+            font-size: 30px;
+            line-height: 36px;
+            & > span {
+                font-size: 24px;
+            }
+        }
+    }
+}

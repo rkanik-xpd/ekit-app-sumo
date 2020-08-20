@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Roboto:wght@300;400;500&display=swap");
+
+@font-face {
+    font-family: "SF UI Display Regular";
+    src: url(../fonts/762c72a2791c9d3eadc7e3b6b935aa69.eot); /* IE9*/
+    src: url(../fonts/762c72a2791c9d3eadc7e3b6b935aa69.eot?#iefix) format("embedded-opentype"),
+        /* IE6-IE8 */ url(../fonts/762c72a2791c9d3eadc7e3b6b935aa69.woff2) format("woff2"),
+        /* chrome、firefox */ url(../fonts/762c72a2791c9d3eadc7e3b6b935aa69.woff) format("woff"),
+        /* chrome、firefox */ url(../fonts/762c72a2791c9d3eadc7e3b6b935aa69.ttf) format("truetype"),
+        /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url(../svg/762c72a2791c9d3eadc7e3b6b935aa69.svg)
+            format("svg"); /* iOS 4.1- */
+}
+
+body {
+    font-family: "Archivo", sans-serif;
+    // #ekit-app-sumo {
+    //     font-family: "Roboto", sans-serif;
+    // }
+}
+
+//font-family: "SF UI Display Regular" !important;
