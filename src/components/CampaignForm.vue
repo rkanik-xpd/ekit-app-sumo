@@ -68,6 +68,9 @@
 				</button>
 			</form>
 		</perfect-scrollbar>
+		<div class="dot-icons">
+			<img src="../assets/svg/dots.svg" alt />
+		</div>
 	</div>
 </template>
 
@@ -169,6 +172,7 @@ export default {
 		background-color: white;
 		font-family: "Roboto", sans-serif;
 		box-shadow: 0 -30px 30px 60px rgba(black, 0.05);
+		position: relative;
 		.scrollbar {
 			height: 598px;
 		}
@@ -226,6 +230,12 @@ export default {
 		}
 		.message:last-child {
 			margin-bottom: 0;
+		}
+		.dot-icons {
+			position: absolute;
+			bottom: -2rem;
+			right: -2rem;
+			z-index: -1;
 		}
 	}
 </style>
